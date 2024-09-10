@@ -1,0 +1,84 @@
+body {
+    margin-top: 100px;
+}
+
+.section-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* General Section Styles */
+.section-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    border-radius: 10px;
+    border: 2px solid #254f5f;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.section-container img {
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid #254f5f;
+}
+
+/* Image on Top for Sections */
+.section-top-image {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-top-image img {
+    height: 40vh;
+}
+
+.section-top-image .section-content {
+    padding: 20px;
+    flex-grow: 1;
+    border-bottom: 2px solid #254f5f;
+}
+
+/* Image on Bottom for Sections */
+.section-bottom-image {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.section-bottom-image img {
+    height: 40vh;
+}
+
+.section-bottom-image .section-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Text Content for Sections */
+.section-content h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #264653;
+}
+
+.section-content p {
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+@media (max-width: 1024px) {
+    .section-container {
+        width: 100%;
+        height: 80vh;
+        gap: 30px;
+    }
+}

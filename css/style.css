@@ -1,0 +1,128 @@
+body {
+    background: url('../images/UpdatedBackgroundImage2.jpg') no-repeat center top;
+    background-size: cover;
+    background-position-y: 4rem;
+}
+
+/* Main Banner Section */
+#main-banner {
+    position: relative;
+    text-align: left;
+    color: black;
+    height: 55vh;
+    margin-top: 10rem;
+    flex-grow: 1
+}
+
+.banner-text {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translateY(-40%);
+    padding: 20px 40px;
+    background-color: rgba(255, 210, 180, 0.8);
+    border-radius: 10px;
+    display: inline-block;
+    max-font-size: 100px;
+}
+
+.banner-text h2 {
+    font-size: 5vw;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #264653;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-family: 'Georgia', serif;
+}
+
+/* Content Section */
+#main-content {
+    padding: 20px 20px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background-color: #ffd2b4;
+    border-radius: 10px;
+    box-shadow: 0 0 0;
+    width: 18%;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #264653;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+}
+
+.card p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.card button {
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background-color: #e76f51;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #f4a261;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+}
