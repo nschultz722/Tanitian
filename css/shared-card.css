@@ -1,5 +1,6 @@
 body {
-    margin-top: 100px;
+    margin-top: 140px;
+    background-color: #fefae0;
 }
 
 .section-grid {
@@ -17,6 +18,7 @@ body {
     width: 50%;
     height: 100vh;
     border-radius: 10px;
+    background-color: #ffd2b4;
     border: 2px solid #254f5f;
     overflow: hidden;
     margin: 0;
@@ -79,6 +81,6 @@ body {
     .section-container {
         width: 100%;
         height: 80vh;
-        gap: 30px;
+        gap: 5px;
     }
 }

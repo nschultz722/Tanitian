@@ -2,6 +2,7 @@ body {
     background: url('../images/UpdatedBackgroundImage2.jpg') no-repeat center top;
     background-size: cover;
     background-position-y: 4rem;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Main Banner Section */
@@ -11,6 +12,7 @@ body {
     color: black;
     height: 55vh;
     margin-top: 10rem;
+    margin-bottom: 30rem;
     flex-grow: 1
 }
 
@@ -20,7 +22,7 @@ body {
     left: 5%;
     transform: translateY(-40%);
     padding: 20px 40px;
-    background-color: rgba(255, 210, 180, 0.8);
+    background-color: #e76f51;
     border-radius: 10px;
     display: inline-block;
     max-font-size: 100px;
@@ -30,8 +32,9 @@ body {
     font-size: 5vw;
     font-family: 'Georgia', serif;
     font-weight: bold;
-    color: #264653;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-shadow: 2px 2px 4px #e76f51;
+;
 }
 
 .banner-text p {
@@ -47,6 +50,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 15rem;
 }
 
 .card-grid {
