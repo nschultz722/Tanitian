@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taniti Island - Page Title</title>
+  <title>Taniti Island - Booking</title>
   <link rel="stylesheet" href="../css/shared.css">
-  <link rel="stylesheet" href="../css/shared-card.css">
+  <link rel="stylesheet" href="../css/shared-tall-card.css">
+  <link rel="stylesheet" href="../css/shared-small-cards.css">
+  <link rel="stylesheet" href="../css/toast-message.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -23,28 +25,42 @@
   </nav>
 </header>
 
-<div class="section-grid">
-
-  <!-- Top Image Section -->
-  <div class="section-container section-top-image">
-    <img src="../images/cultureSmall.jpg" alt="Bottom Image Example">
-    <div class="section-content">
-      <h3>Top Image Section Title</h3>
-      <p>This is an example of a section where the image is at the top and the text is below.</p>
-    </div>
+<div class="tall-card-container">
+  <div class="wide-card-images">
+    <img src="../images/bookingLarge.jpg" alt="First Image">
   </div>
-
-  <!-- Bottom Image Section -->
-  <div class="section-container section-bottom-image">
-    <img src="../images/aboutSmall.jpg" alt="Top Image Example">
-    <div class="section-content">
-      <h3>Bottom Image Section Title</h3>
-      <p>This is an example of a section where the image is at the bottom and the text is above.</p>
-    </div>
+  <div class="tall-card-content">
+    <h3>Book Your Stay at Taniti Island</h3>
+    <p>Ready to experience the beauty of Taniti Island? Use our easy booking options to reserve your lodging, activities, and transportation today. Whether you're planning a romantic getaway, a family vacation, or an adventure-filled trip, we’ve got you covered.</p>
   </div>
-
 </div>
 
+<section id="main-content">
+  <div class="card-grid">
+    <div class="card">
+      <h2>Book Your Lodging</h2>
+      <p>Find the perfect place to stay, from luxury resorts to beachfront cottages. Choose your dates, explore availability, and book your ideal accommodation today.</p>
+      <button onclick="showToast()">Book Lodging</button>
+    </div>
+    <div class="card">
+      <h2>Reserve Activities</h2>
+      <p>Adventure awaits! Explore our range of activities, from water sports to cultural tours. Secure your spots for snorkeling, hiking, and more.</p>
+      <button onclick="showToast()">Book Activities</button>
+    </div>
+    <div class="card">
+      <h2>Arrange Transportation</h2>
+      <p>Make your travel around the island hassle-free. Book your car rentals, airport transfers, and boat tours with ease.</p>
+      <button onclick="showToast()">Book Transportation</button>
+    </div>
+    <div class="card">
+      <h2>Reserve Dining Experiences</h2>
+      <p>Savor the flavors of Taniti Island by reserving your dining experiences in advance. Enjoy beachfront restaurants, fine dining, and more.</p>
+      <button onclick="showToast()">Book Dining</button>
+    </div>
+  </div>
+</section>
+
+<div id="toast">Sorry, this functionality is currently unavailable</div>
 
 <footer class="footer">
   <h2>Follow us on Social Media</h2>
@@ -57,6 +73,16 @@
     <p>Copyright @2024</p>
   </div>
 </footer>
+
+<script>
+  function showToast() {
+    var toast = document.getElementById("toast");
+    toast.className = "show";
+    setTimeout(function(){
+      toast.className = toast.className.replace("show", "");
+    }, 3000);
+  }
+</script>
 
 </body>
 </html>

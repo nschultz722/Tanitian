@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taniti Island - Page Title</title>
+  <title>Taniti Island - Contact Us</title>
   <link rel="stylesheet" href="../css/shared.css">
-  <link rel="stylesheet" href="../css/shared-card.css">
+  <link rel="stylesheet" href="../css/shared-tall-card.css">
+  <link rel="stylesheet" href="../css/shared-small-cards.css">
+  <link rel="stylesheet" href="../css/contact-form.css">
+  <link rel="stylesheet" href="../css/toast-message.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -23,28 +26,31 @@
   </nav>
 </header>
 
-<div class="section-grid">
+<!-- Contact Form Section -->
+<div class="contact-form">
+  <h2>Contact Us</h2>
+  <form id="contactForm" action="#" method="post">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-  <!-- Top Image Section -->
-  <div class="section-container section-top-image">
-    <img src="../images/cultureSmall.jpg" alt="Bottom Image Example">
-    <div class="section-content">
-      <h3>Top Image Section Title</h3>
-      <p>This is an example of a section where the image is at the top and the text is below.</p>
-    </div>
-  </div>
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-  <!-- Bottom Image Section -->
-  <div class="section-container section-bottom-image">
-    <img src="../images/aboutSmall.jpg" alt="Top Image Example">
-    <div class="section-content">
-      <h3>Bottom Image Section Title</h3>
-      <p>This is an example of a section where the image is at the bottom and the text is above.</p>
-    </div>
-  </div>
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="6" placeholder="Enter your message" required></textarea>
 
+    <button type="submit">Send Message</button>
+  </form>
 </div>
 
+<!-- Contact Information -->
+<div class="contact-details">
+  <p>Email: <a href="mailto:info@tanitiisland.com">info@tanitiisland.com</a></p>
+  <p>Phone: +1-234-567-890</p>
+  <p>Address: 1234 Taniti Island Road, Taniti, Pacific Islands</p>
+</div>
+
+<div id="toast">Thank you, We'll get back to you shortly!</div>
 
 <footer class="footer">
   <h2>Follow us on Social Media</h2>
@@ -57,6 +63,19 @@
     <p>Copyright @2024</p>
   </div>
 </footer>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var toast = document.getElementById("toast");
+    toast.className = "show";
+
+    setTimeout(function() {
+      toast.className = toast.className.replace("show", "");
+    }, 3000);
+  });
+</script>
 
 </body>
 </html>

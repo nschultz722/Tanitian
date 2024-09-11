@@ -16,12 +16,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100vh;
+    height: 85vh;
     border-radius: 10px;
     background-color: #ffd2b4;
     border: 2px solid #254f5f;
     overflow: hidden;
-    margin: 0;
+    margin-bottom: 3rem;
     padding: 0;
     transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
     box-sizing: border-box;
@@ -66,13 +66,13 @@ body {
 
 /* Text Content for Sections */
 .section-content h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #264653;
 }
 
 .section-content p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #555;
     line-height: 1.8;
 }
